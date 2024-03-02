@@ -4,6 +4,6 @@ declare -a paginas=('www.google.com''www.plataforma-utslp.net''sito.utslp.edu.mx
 
 for pagina in "$pagina{[@]}"
 do
-	escho -e "$pagina" \n"
+	echo -e "$pagina" \n"
 	curl -s -l "$pagina"
 done
